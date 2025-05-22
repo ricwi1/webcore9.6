@@ -7,10 +7,86 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>webcore9.6</title>
+    <link rel="stylesheet" href="scss/style.css">
   </head>
   <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 5 starter </h3>
-  </body>
+    <aside class="aside">
+      <div class="aside_header">
+        <img src="ic/back.png" alt="back" class="aside_header__icon">
+        <img src="ic/logo.png" alt="logo" class="aside_header__logo">
+        <img src="ic/search.png" alt="search" class="aside_header__icon">
+      </div>
+      <div class="aside_button">
+        <button class="aside_button__item"><img src="ic/highlight.png" alt="divider" class="aside_list__divider">Ремонт техники</li>
+        <button class="aside_button__item">Услуги и сервисы</button>
+        <button class="aside_button__item">Корпоративным клиентам</button>
+        <button class="aside_button__item">Продовцам техники</button>
+        <button class="aside_button__item">Партнерам</button>
+        <button class="aside_button__item">Производителям</button>
+        <button class="aside_button__item">Наши сервисные центры</button>
+        <button class="aside_button__item">Контакты</button>
+      </div>
+      <div class="aside_footer">
+        <div class="aside_footer__icon_container">
+          <img src="ic/call.png" alt="call" class="aside_footer__icon">
+          <img src="ic/chat.png" alt="chat"class="aside_footer__icon">
+          <img src="ic/profile.png" alt="profile" class="aside_footer__icon">
+        </div>
+        <p class="aside_footer__email">mail@cps.com</p> 
+        <p class="aside_footer__tel">8 800 890 8900</p>
+        <div class="aside_footer__button_container">
+           <button type="button" class="aside_footer__button">RU</button>
+           <button type="button" class="aside_footer__button">EN</button>
+           <button type="button" class="aside_footer__button">CH</button>
+        </div>
+      </div>
+    </aside>
+    <div class="main">
+      <header class="main_header">
+        <img src="ic/burger.png" alt="menu" class="main_header__icon">
+        <img src="ic/divider.png" alt="divider" class="main_header__divider-for768">
+        <img src="ic/logo.png" alt="logo" class="main_header__logo">
+        <img src="ic/divider.png" alt="divider" class="main_header__divider">
+        <div class="main_header__icon-for768">
+           <img src="ic/call.png" alt="call" class="main_header__icon">
+           <img src="ic/chat.png" alt="chat" class="main_header__icon">
+           <img src="ic/profile.png" alt="profile" class="main_header__icon">
+        </div>
+        <img src="ic/divider.png" alt="divider" class="main_header__divider-for768">
+        <div class="main_header__text">Оставить заявку</div>
+        <img src="ic/repair.png" alt="repair" class="main_header__repair">
+        <div class="main_header__text">Статус Ремонта</div>
+        <img src="ic/checkstatus.png" alt="search" class="main_header__checkstatus">
+      </header>
+     <main class="main_container">
+      <div class="main_container__title">
+        <img src="ic/highlight.png" alt="highlight" class="main_container__title-line">
+        <h1 class="mian_container__title-text">Услуги и сервисы</h1>
+      </div>
+      <ul  class="main_container__menu" style="list-style-type: none;">
+        <li class="main_container__menu-item">Ремонтируемые бренды</li>
+        <li class="main_container__menu-item">Дополнительные услуги</li>
+        <li class="main_container__menu-item">Ремонтируемые устройства</li>         
+        <li class="main_container__menu-item">Цены на услуги</li>
+        <li class="main_container__menu-item">Адреса сервисных центров</li>
+        <li class="main_container__menu-item">Специальные цены</li>         
+        <li class="main_container__menu-item">Отзывы</li>
+      </ul>
+      <div class="main_container__text">
+        <img src="ic/photo.png" alt="photo" class="main_container__photo-for768">
+        <p class="main_container__text-for320">
+         Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+        </p>
+        <p class="main_container__text-for768">
+         Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="main_container__text-for1120">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>         
+        </p>
+      </div>
+      <div class="main_container__readmore">
+        <img src="ic/expand.png" alt="expand" class="main_container__readmore-expand">Читать далее
+      </div>
+      <img src="ic/photo.png" alt="photo" class="main_container__photo-for320">
+       </main>
+    </div>
+</body>
 </html>

@@ -21,7 +21,7 @@ body{
     margin: 0;
     padding: 0;
 }
-button, .icon, .menu-item {
+button, .icon, .menu-item,.main_container__readmore {
   cursor: pointer;
   transition: filter 0.3s ease, opacity 0.3s ease;
 }
@@ -34,7 +34,7 @@ button, .icon, .menu-item {
     background-color: white;
     min-width: 320px;
     max-width:360px;
-    height:100vh;
+    height:100hv;
     min-height: 1024px;
 }
 
@@ -87,7 +87,7 @@ button, .icon, .menu-item {
 /* === айсад подвал === */
 
 .aside_footer{
-    margin: auto 0 24px 24px;
+    margin: 200px 0 24px 24px;
 }
 .aside_footer__icon_container{
     display:flex;
@@ -95,7 +95,7 @@ button, .icon, .menu-item {
 }
 .aside_footer__email{
     font-size: 16px;
-     margin-top: 16px;
+    margin-top: 16px;
 }
 .aside_footer__tel{
     font-size: 32px;
@@ -178,7 +178,7 @@ button, .icon, .menu-item {
     margin-left:20px;    
 }
 .main_container__text-for320 {
-  margin-top: 16px;
+   margin-top: 16px;
 }
 .main_container__text-for768, .main_container__text-for320{
     padding:0 16px;
@@ -192,7 +192,7 @@ button, .icon, .menu-item {
     display:block;
     float:right;        
     width:50%;
-    margin:0 20px; 
+    margin:0 24px 32px 24px;
 }
 .main_container__readmore{
     display:flex;
@@ -202,4 +202,91 @@ button, .icon, .menu-item {
 .main_container__readmore-expand{
     height:24px;
     width:24px;
+}
+/* === second third ===*/
+.second, .third{
+    margin-top: 32px;
+}
+.second_header, .third_header{
+    border-top: 2px solid #B8FFEC;
+    color:#7E7E82;
+    background:linear-gradient(90deg, #F8F8F8,white);
+    display: flex;
+    height: 56px;
+    width:100%;
+    align-items: center;
+}
+.second_header__text, .third_header_text{
+    margin-left: 32px;
+}
+.second_container, .third_container{
+    margin:32px;
+}
+
+/* === конпки бренда === */
+
+.second_container__button, .third_container__button{
+    display:flex;
+    flex-flow: row wrap;
+    gap:16px 32px;
+}
+.second_container__button-item, .second_container__button-item-for1120, .second_container__button-item-for768,.third_container__button-item{
+    display: flex;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+}
+.second_container__button-item, .second_container__button-item-for1120, .second_container__button-item-for768{
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    width:240px;
+    height:72px;
+}
+.button_container__logo{
+    height: 52px;
+}
+.button_container__logo-big{
+    height:32px;
+}
+.button_container__logo-medium{
+    height:24px;
+}
+.button_container__go,.button_container__go-third{
+    height:40px;
+}
+
+/* === свернуть & показать === */
+
+.button_expand{
+    font-family:"TT Lakes", sans-serif;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 32px;
+    border:none;
+    width:150px;
+    background-color:#F8F8F8 ;
+}
+.button_expand__ic{
+    height: 24px;
+}
+.swiper{
+    display:none !important;
+}
+/* === конпки техника === */
+.third_container__button-item{
+    width:240px;
+    height:160px;
+    padding:12px;
+}
+.button_container__text{
+    align-self:flex-start;
+    font-family:"TT Lakes", sans-serif;
+    font-size: 16px;
+}
+.button_container__go-third{
+    align-self: flex-end;
+    margin-left:auto;
 }

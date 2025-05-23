@@ -11,7 +11,7 @@
     font-style: normal;
 } 
 
-/* === Сброс и общие стили === */
+/* === base style === */
 
 body{
     background-color: #F8F8F8;
@@ -21,6 +21,13 @@ body{
     margin: 0;
     padding: 0;
 }
+button, .icon, .menu-item {
+  cursor: pointer;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+/* === aside === */
+
 .aside{
     display:flex;
     flex-direction: column;
@@ -30,6 +37,7 @@ body{
     height:100vh;
     min-height: 1024px;
 }
+
 /* === асайд шапка === */
 
 .aside_header{
@@ -37,14 +45,8 @@ body{
     align-items: center;
     padding:23px;
 }
-.aside_header__icon, .aside_footer__icon,.main_header__repair,.main_header__icon, .main_header__checkstatus{
-    cursor: pointer;
+.aside_header__icon, .aside_footer__icon{
     width:40px;
-    transition: filter 0.3s ease, opacity 0.3s ease;
-}
-.aside_header__icon:hover,.aside_footer__icon:hover,.aside_list__item:hover {
-    filter: brightness(0.7); 
-    opacity: 0.8;
 }
 .aside_header__icon:first-child{
     margin-right:24px;
@@ -61,7 +63,7 @@ body{
     flex-direction: column;
     margin-top: 32px;
     gap: 24px;
-    padding:0;
+    margin-top: 32px;
 }
 .aside_button__item{
     display:flex;
@@ -70,15 +72,12 @@ body{
     border:none;
     font-weight: 500;
     font-size: 20px;
-    cursor: pointer;
     margin:0 24px;
     align-items: center;
-    transition: filter 0.3s ease, opacity 0.3s ease;
 }
 .aside_button__item:first-child{
     margin:0;
     gap: 20px;
-    align-items: center;
     color:#7E7E82;
 }
 .aside_list__divider{
@@ -88,21 +87,17 @@ body{
 /* === айсад подвал === */
 
 .aside_footer{
-    margin-top:auto;
-    margin-left:24px;
-    margin-bottom: 24px;
+    margin: auto 0 24px 24px;
 }
 .aside_footer__icon_container{
     display:flex;
     gap:16px;
 }
 .aside_footer__email{
-    cursor: pointer;
     font-size: 16px;
      margin-top: 16px;
 }
 .aside_footer__tel{
-    cursor: pointer;
     font-size: 32px;
     font-weight: 700;
     margin-top: 20px;
@@ -113,7 +108,6 @@ body{
     gap:16px;
 }
 .aside_footer__button{
-    cursor: pointer;
     border:none;
     background-color: white;
 }
@@ -130,20 +124,15 @@ body{
     height: 88px;
     align-items: center;
 }
-.main_header__divider-for768{
-    display:none;
-}
 .main_header__icon, .main_header__divider,  .main_header__divider-for768, .main_header__logo{
     display:none;
 }
 .main_header__repair, .main_header__checkstatus{
-    margin-right:16px;
-}
-.main_header__repair, .main_header__checkstatus{
-    margin-left: 16px;        
+    margin: 0 16px;
+    width: 40px;
 }
 
-                                       /* === мэйн основа === */
+ /* === мэйн основа === */
 
 .main_container{
     border-top: 1px solid #f8f8f8;
@@ -161,7 +150,7 @@ body{
     height: 40px;
 }
 
-                                                  /* === мэйн основа menu === */
+/* === мэйн основа menu === */
 
 .main_container__menu{
     display: flex;
@@ -171,7 +160,6 @@ body{
     width:100%;
 }
 .main_container__menu-item{
-    cursor: pointer;
     margin:20px;
     color:#7E7E82;
     height:24px;
@@ -184,17 +172,15 @@ body{
     border:2px solid #B8FFEC;
 }
 
-                                              /* === мэйн основа text === */
+/* === мэйн основа text === */
 .main_container__text{
     flex-direction: row; 
     margin-left:20px;    
 }
-.main_container__text-for768{
-    display:block;        
-    font-size: 15px;
-    padding:0 16px;
+.main_container__text-for320 {
+  margin-top: 16px;
 }
-.main_container__text-for320{
+.main_container__text-for768, .main_container__text-for320{
     padding:0 16px;
     margin-top: 16px;
     font-size: 15px;
@@ -209,7 +195,6 @@ body{
     margin:0 20px; 
 }
 .main_container__readmore{
-    cursor: pointer;
     display:flex;
     padding:16px;
     font-weight: 500;

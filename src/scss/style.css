@@ -203,11 +203,11 @@ button, .icon, .menu-item,.main_container__readmore {
     height:24px;
     width:24px;
 }
-/* === second third ===*/
-.second, .third{
+/* === second third fourth===*/
+.second, .third,.fourth{
     margin-top: 32px;
 }
-.second_header, .third_header{
+.second_header, .third_header, .fourth_header{
     border-top: 2px solid #B8FFEC;
     color:#7E7E82;
     background:linear-gradient(90deg, #F8F8F8,white);
@@ -216,7 +216,7 @@ button, .icon, .menu-item,.main_container__readmore {
     width:100%;
     align-items: center;
 }
-.second_header__text, .third_header_text{
+.second_header__text, .third_header__text, .fourth_header__text{
     margin-left: 32px;
 }
 .second_container, .third_container{
@@ -289,4 +289,42 @@ button, .icon, .menu-item,.main_container__readmore {
 .button_container__go-third{
     align-self: flex-end;
     margin-left:auto;
+}
+.fourth_table{
+    min-width:100%;
+    padding:32px;
+    text-align: left;
+    border-collapse: collapse;
+}
+.fourth_table__1 th{
+    color: #7E7E82;
+    font-weight: 500;
+}
+.fourth_table__2{
+    background-color: white;
+    border-radius: 10px;
+    padding:16px;
+}
+.fourth_table__2 th{
+    font-weight: 500;
+}
+.fourth_table__2 tr:not(:first-child) th,
+.fourth_table__2 tr:not(:first-child) td{
+    padding-top:12px;
+    border-top: 1px solid #EAEAEA ;
+}
+.fourth_table__order-img{
+    height:32px;
+}
+.fourth_table__other{
+    border-top: 2px solid #EAEAEA ;
+}
+.fourth_table__name{
+    width:50%;
+}
+.fourth_table__price, .fourth_table__time{
+    width:15%;
+}
+.fourth_table__price{
+    width:20%;
 }

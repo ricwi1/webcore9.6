@@ -290,41 +290,75 @@ button, .icon, .menu-item,.main_container__readmore {
     align-self: flex-end;
     margin-left:auto;
 }
-.fourth_table{
-    min-width:100%;
-    padding:32px;
-    text-align: left;
-    border-collapse: collapse;
+/* === fourth table === */
+.fourth_table {
+  padding: 32px;
 }
-.fourth_table__1 th{
-    color: #7E7E82;
-    font-weight: 500;
+
+.fourth_table__body {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.fourth_table__2{
-    background-color: white;
-    border-radius: 10px;
-    padding:16px;
+
+.fourth_table__1 {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
 }
-.fourth_table__2 th{
-    font-weight: 500;
+
+.fourth_table__head th {
+  color: #7E7E82;
+  font-weight: 500;
+  padding: 16px 32px;
+  font-size: 14px;
 }
-.fourth_table__2 tr:not(:first-child) th,
-.fourth_table__2 tr:not(:first-child) td{
-    padding-top:12px;
-    border-top: 1px solid #EAEAEA ;
+
+.fourth_table__body td {
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 14px;
 }
-.fourth_table__order-img{
-    height:32px;
+.fourth_table__order-img {
+  height: 32px;
+  cursor: pointer;
 }
-.fourth_table__other{
-    border-top: 2px solid #EAEAEA ;
+
+.fourth_table__name {
+  width: 50%;
 }
-.fourth_table__name{
-    width:50%;
+
+.fourth_table__price {
+  width: 20%;
 }
-.fourth_table__price, .fourth_table__time{
-    width:15%;
+
+.fourth_table__time {
+  width: 15%;
 }
-.fourth_table__price{
-    width:20%;
+
+.fourth_table__order {
+  width: 15%;
+}
+.fourth_table__body tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+.fourth_table__body tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+.fourth_table__body tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+.fourth_table__body tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+.fourth_text{
+    margin: 0 32px ;
+}
+.fourth_readmore{
+    margin:32px;
+    display: flex;
+    align-items:center;
+}
+.fourth_readmore__text, .fourth_readmore__ic{
+    cursor: pointer;
 }

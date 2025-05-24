@@ -7,8 +7,8 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <title>webcore9.6</title>
-    <link rel="stylesheet" href="scss/style.css">
   </head>
   <body>
     <aside class="aside">
@@ -43,7 +43,8 @@
       </div>
     </aside>
     <main>
-    <div class="main">
+      <!-- first -->
+    <section class="main">
       <div class="main_header">
         <img src="ic/burger.png" alt="menu" class="main_header__icon">
         <img src="ic/divider.png" alt="divider" class="main_header__divider-for768">
@@ -87,9 +88,10 @@
         <img src="ic/expand.png" alt="expand" class="main_container__readmore-expand">Читать далее
       </div>
       <img src="ic/photo.png" alt="photo" class="main_container__photo-for320">
-    </div>
-    </div>
-    <div class="second">
+     </div>
+    </section>
+    <!-- second -->
+    <section class="second">
      <div class="second_header">
         <p class="second_header__text">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p>
      </div>
@@ -150,7 +152,6 @@
               <span class="button_expand__text">Скрыть</span>
           </button>
         </div>
-      </div>
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -204,7 +205,10 @@
           </div>
             <div class="swiper-pagination"></div>
         </div>
-     <div class="third">
+     </div>
+     </section>
+     <!-- third -->
+     <section class="third">
        <div class="third_header">
         <p class="third_header__text">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</p>
        </div>
@@ -237,60 +241,65 @@
               <span class="button_expand__text">Скрыть</span>
           </button>
         </div>
-      </div>
-     <div class="fourth">
+       </div>
+     </section>
+     <!-- fourth -->
+     <section class="fourth">
        <div class="fourth_header">
         <p class="fourth_header__text">ЦЕНЫ НА УСЛУГИ</p>
        </div>
        <div class="fourth_table">
-       <table class="fourth_table__1">
-        <tr>
-         <th class="fourth_table__name">Ремонтные услуги</th>
-         <th class="fourth_table__price">Цена</th>
-         <th class="fourth_table__time">Срок</th>
-         <th class="fourth_table__order"></th>
-        </tr>
-        </table>
-        <div class="fourth_table__2">
-        <table>
-        <tr class="fourth_table__other">
-         <th class="fourth_table__name">Диагностика</th>
-         <th class="fourth_table__price">Бесплатно</th>
-         <th class="fourth_table__time">30 мин</th>
-         <th class="fourth_table__order"><img class="fourth_table__order-img" src="ic/order.png" alt="order"> </th>
-        </tr>
-        <tr class="fourth_table__other">
-         <th class="fourth_table__name">Замена дисплея</th>
-         <th class="fourth_table__price">1 000 ₽</th>
-         <th class="fourth_table__time">30-120 мин</th>
-         <th class="fourth_table__order"><img class="fourth_table__order-img" src="ic/order.png" alt="order"> </th>
-        </tr>
-        <tr class="fourth_table__other">
-         <th class="fourth_table__name">Замена полифонического динамика</th>
-         <th class="fourth_table__price">1 000 ₽</th>
-         <th class="fourth_table__time">30-120 мин</th>
-         <th class="fourth_table__order"><img class="fourth_table__order-img" src="ic/order.png" alt="order"> </th>
-        </tr>
-        <tr class="fourth_table__other">
-         <th class="fourth_table__name">Тестирование с выдачей технического заключения</th>
-         <th class="fourth_table__price">1 000 ₽</th>
-         <th class="fourth_table__time">30-120 мин</th>
-         <th class="fourth_table__order"><img class="fourth_table__order-img" src="ic/order.png" alt="order"> </th>
-        </tr>
-        <tr class="fourth_table__other">
-         <th class="fourth_table__name">Замена программного обеспечения</th>
-         <th class="fourth_table__price">1 000 ₽</th>
-         <th class="fourth_table__time">30-120 мин</th>
-         <th class="fourth_table__order"><img class="fourth_table__order-img" src="ic/order.png" alt="order"> </th>
-        </tr>
-       </table>
+         <table class="fourth_table__1">
+          <thead class="fourth_table__head"> 
+           <tr>
+             <th class="fourth_table__name">Ремонтные услуги</th>
+             <th class="fourth_table__price">Цена</th>
+             <th class="fourth_table__time">Срок</th>
+             <th class="fourth_table__order"></th>
+           </tr>
+          </thead>
+          <tbody class="fourth_table__body">
+            <tr class="fourth_table__other">
+             <td class="fourth_table__name">Диагностика</td>
+             <td class="fourth_table__price">Бесплатно</td>
+             <td class="fourth_table__time">30 мин</td>
+             <td class="fourth_table__order"><img class="fourth_table__order-img" src="ic/order.png" alt="order"> </td>
+            </tr>
+            <tr class="fourth_table__other">
+             <td class="fourth_table__name">Замена дисплея</td>
+             <td class="fourth_table__price">1 000 ₽</td>
+             <td class="fourth_table__time">30-120 мин</td>
+             <td class="fourth_table__order"><img class="fourth_table__order-img" src="ic/order.png" alt="order"> </td>
+            </tr>
+            <tr class="fourth_table__other">
+             <td class="fourth_table__name">Замена полифонического динамика</td>
+             <td class="fourth_table__price">1 000 ₽</td>
+             <td class="fourth_table__time">30-120 мин</td>
+             <td class="fourth_table__order"><img class="fourth_table__order-img" src="ic/order.png" alt="order"> </td>
+            </tr>
+            <tr class="fourth_table__other">
+             <td class="fourth_table__name">Тестирование с выдачей технического заключения</td>
+             <td class="fourth_table__price">1 000 ₽</td>
+             <td class="fourth_table__time">30-120 мин</td>
+             <td class="fourth_table__order"><img class="fourth_table__order-img" src="ic/order.png" alt="order"> </td>
+            </tr>
+            <tr class="fourth_table__other">
+             <td class="fourth_table__name">Замена программного обеспечения</td>
+             <td class="fourth_table__price">1 000 ₽</td>
+             <td class="fourth_table__time">30-120 мин</td>
+             <td class="fourth_table__order"><img class="fourth_table__order-img" src="ic/order.png" alt="order"> </td>
+            </tr>
+          </tbody>
+         </table>
        </div>
+       <div class="fourth_text">
+        Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
        </div>
-       <div class="third_text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</div>
-       <div class="more">
-        <span>Получить коммерческое предложение</span>
-        <img src="ic/more.png" alt="more">
-      </div>
+       <div class="fourth_readmore">
+        <span class="fourth_readmore__text">Получить коммерческое предложение</span>
+        <img class="fourth_readmore__ic" src="ic/more.png" alt="more">
+       </div>
+      </section>
     </main>
 </body>
 </html>

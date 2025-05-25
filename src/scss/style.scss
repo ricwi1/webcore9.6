@@ -362,12 +362,24 @@ button, .icon, .menu-item,.main_container__readmore {
 .fourth_readmore__text, .fourth_readmore__ic{
     cursor: pointer;
 }
+ .line-row {
+  padding: 0 !important;
+  height: 1px;
+}
+
+.line {
+  height: 1px;
+  background-color: #EAEAEA;
+  margin: 0 15px;
+}
+/* === footer === */
 .footer{
     display:flex;
     margin:32px;
     color:#7E7E82;
     justify-content: space-between;
     font-size: 14px;
+    margin-top: 80px;
 }
 .footer_info{
     text-align: right;

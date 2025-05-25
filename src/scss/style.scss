@@ -362,3 +362,18 @@ button, .icon, .menu-item,.main_container__readmore {
 .fourth_readmore__text, .fourth_readmore__ic{
     cursor: pointer;
 }
+.footer{
+    display:flex;
+    margin:32px;
+    color:#7E7E82;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.footer_info{
+    text-align: right;
+}
+.footer__left,
+.footer__center,
+.footer__right {
+max-width: 30%;         
+}

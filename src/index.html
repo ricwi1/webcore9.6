@@ -7,6 +7,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <title>webcore9.6</title>
   </head>
@@ -146,11 +147,12 @@
               <img class="button_container__go" src="ic/go.png" alt="go">
           </button>
         </div>
-        <div class="second_container__button-expand">
-          <button class="button_expand" >
+        <div class="container__button-expand">
+          <button class="second_button_expand" >
               <img class="button_expand__ic" src="ic/expand2.png" alt="expand">
               <span class="button_expand__text">Скрыть</span>
           </button>
+        </div>
         </div>
         <div class="swiper">
           <div class="swiper-wrapper">
@@ -205,7 +207,6 @@
           </div>
             <div class="swiper-pagination"></div>
         </div>
-     </div>
      </section>
      <!-- third -->
      <section class="third">
@@ -226,22 +227,47 @@
               <div class="button_container__text">Ремонт ПК</div>
               <img class="button_container__go-third" src="ic/go.png" alt="go">
           </button>
-          <button class="third_container__button-item">
+          <button class="third_container__button-item-for768">
               <div class="button_container__text">Ремонт мониторов</div>
               <img class="button_container__go-third" src="ic/go.png" alt="go">
           </button>
-          <button class="third_container__button-item">
+          <button class="third_container__button-item-for1440">
               <div class="button_container__text">Ремонт смартфонов </div>
               <img class="button_container__go-third" src="ic/go.png" alt="go">
           </button>
         </div>
-        <div class="second_container__button-expand">
-          <button class="button_expand" >
+        <div class="container__button-expand">
+          <button class="third_button_expand" >
               <img class="button_expand__ic" src="ic/expand2.png" alt="expand">
               <span class="button_expand__text">Скрыть</span>
           </button>
         </div>
        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="button_container__text">Ремонт ноутбуков</div>
+                <img class="button_container__go-third" src="ic/go.png" alt="go">
+            </div>
+            <div class="swiper-slide">
+                <div class="button_container__text">Ремонт планшетов</div>
+                <img class="button_container__go-third" src="ic/go.png" alt="go">
+            </div>
+            <div class="swiper-slide">
+                <div class="button_container__text">Ремонт ПК</div>
+                <img class="button_container__go-third" src="ic/go.png" alt="go">
+            </div>
+            <div class="swiper-slide">
+                <div class="button_container__text">Ремонт мониторов</div>
+                <img class="button_container__go-third" src="ic/go.png" alt="go">
+            </div>
+            <div class="swiper-slide">
+                 <div class="button_container__text">Ремонт смартфонов </div>
+                 <img class="button_container__go-third" src="ic/go.png" alt="go">
+            </div>
+          </div>
+            <div class="swiper-pagination"></div>
+        </div>
      </section>
      <!-- fourth -->
      <section class="fourth">
@@ -312,6 +338,51 @@
           </tbody>
          </table>
        </div>
+       <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper_name">Ремонтные услуги</div>
+                <div class="swiper_text">Диагностика</div>
+                <div class="swiper_price">Цена</div>
+                <div class="swiper_text">Бесалатно</div>
+                <div class="swiper_time">Срок</div>
+                <div class="swiper_timetext">30 мин <img class="fourth_table__order-img" src="ic/order.png" alt="order"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper_name">Ремонтные услуги</div>
+                <div class="swiper_text">Замена дисплея</div>
+                <div class="swiper_price">Цена</div>
+                <div class="swiper_text">1 000 ₽</div>
+                <div class="swiper_time">Срок</div>
+                <div class="swiper_timetext">30-120 мин <img class="fourth_table__order-img" src="ic/order.png" alt="order"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper_name">Ремонтные услуги</div>
+                <div class="swiper_text">Замена полифонического динамика</div>
+                <div class="swiper_price">Цена</div>
+                <div class="swiper_text">1 000 ₽</div>
+                <div class="swiper_time">Срок</div>
+                <div class="swiper_timetext">30-120 мин <img class="fourth_table__order-img" src="ic/order.png" alt="order"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper_name">Ремонтные услуги</div>
+                <div class="swiper_text">Тестирование с выдачей технического заключения</div>
+                <div class="swiper_price">Цена</div>
+                <div class="swiper_text">1 000 ₽</div>
+                <div class="swiper_time">Срок</div>
+                <div class="swiper_timetext">30-120 мин <img class="fourth_table__order-img" src="ic/order.png" alt="order"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper_name">Ремонтные услуги</div>
+                <div class="swiper_text">Замена программного обеспечения</div>
+                <div class="swiper_price">Цена</div>
+                <div class="swiper_text">1 000 ₽</div>
+                <div class="swiper_time">Срок</div>
+                <div class="swiper_timetext">30-120 мин <img class="fourth_table__order-img" src="ic/order.png" alt="order"></div>
+            </div>
+          </div>
+            <div class="swiper-pagination"></div>
+        </div>
        <div class="fourth_text">
         Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
        </div>
@@ -321,16 +392,17 @@
        </div>
       </section>
       <footer class="footer">
-      <div class="footer_copyright">
+      <div class="footer_left">
        <i class="fa-regular fa-copyright"></i>2019 CPS<br>Разработано командой Apesong
       </div>
-      <div class="footer_confidentiality">
+      <div class="footer_center">
         Политика конфиденциальности
       </div>
-      <div class="footer_info">
-        Информация, размещенная на данной странице,<br> не является публичной офертой
+      <div class="footer_right">
+        Информация, размещенная на данной странице, не является публичной офертой
       </div>
     </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

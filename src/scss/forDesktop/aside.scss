@@ -6,22 +6,27 @@
     width:360px;
     min-height: 1024px;
 }
+.aside_header, .aside_button,.aside_footer{
+    position: fixed;
+}
 /* === асайд шапка === */
 
 .aside_header{
+    top:30px;
     display: flex;
     align-items: center;
-    padding:23px;
+    padding:0 23px;
+    position:fixed;
 }
 .aside_header__back{
-        display:none; 
+    display:none; 
 }
 .aside_header__icon, .aside_footer__icon, .aside_header__back{
     width:40px;
 }
 .aside_header__logo{
     width:97px;
-    margin-right: auto;
+    margin-right: 120px;
 }
 
 /* === айсад основа === */
@@ -29,7 +34,7 @@
 .aside_button{
     display:flex;
     flex-direction: column;
-    margin-top: 32px;
+    top:110px;
     gap: 24px;
 }
 .aside_button__item{
@@ -53,7 +58,8 @@
 /* === айсад подвал === */
 
 .aside_footer{
-    margin: 200px 0 24px 24px;
+    top:727px;
+    margin:0 24px;
 }
 .aside_footer__icon_container{
     display:flex;

@@ -21,9 +21,12 @@ body{
     padding: 0;
     min-width: 0;
 }
-button, .icon, .menu-item,.main_container__readmore, .main_header__icon, .main_header__menu, .main_header__repair, .main_header__checkstatus{
-  cursor: pointer;
-  transition: filter 0.3s ease, opacity 0.3s ease;
+
+button, .icon,
+.menu-item, .main_container__readmore, .main_header__icon,
+.main_header__menu, .main_header__repair, .main_header__checkstatus {
+    cursor: pointer;
+    transition: filter 0.3s ease, opacity 0.3s ease;
 }
 body,.aside_button__item,
 .button_expand,

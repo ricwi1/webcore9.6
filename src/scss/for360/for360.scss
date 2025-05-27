@@ -1,18 +1,42 @@
 @media (max-width:767px){
-    .aside_header__back{
-        display:flex;
-        margin-right: 16px;
-    }
     .aside{
         height: 100vh;
+        
+        &_header__back{
+          display:flex;
+          margin-right: 16px;
+        }
     }
+
     .third_container, .second_container, .fourth_table{
         display:none;
     }
     .swiper{
         display:flex !important;
         margin:16px;
+
+        &_name, &_price, &_time{
+          color:#7E7E82;
+        }
+        &_price, &_time{
+          margin-top:16px;
+        }
+        &_timetext{
+          display: flex;
+          align-items: center;
+        }
+        &-slide{
+          display: flex;
+          background-color: white;
+          border: 1px solid #EAEAEA;
+          border-radius: 6px;
+          position: relative;
+          width:240px;
+          padding: 12px;
+          box-sizing: border-box;
+        }
     }
+
     .second .swiper{
         min-height: 116px;
     }
@@ -22,30 +46,12 @@
     .fourth .swiper{
         min-height: 260px;
     }
-    .swiper_name, .swiper_price, .swiper_time{
-        color:#7E7E82;
-    }
-     .swiper_price, .swiper_time{
-        margin-top:16px;
-     }
+
     .fourth_table__order-img{
         margin-left:auto;
         cursor: pointer;
     }
-    .swiper_timetext{
-        display: flex;
-        align-items: center;
-    }
-    .swiper-slide{
-        display: flex;
-        background-color: white;
-        border: 1px solid #EAEAEA;
-        border-radius: 6px;
-        position: relative;
-        width:240px;
-        padding: 12px;
-        box-sizing: border-box;
-    }
+    
     .second .swiper-slide{
         cursor: pointer;
         height: 72px;
@@ -64,33 +70,38 @@
         height: 220px;
         width:260px;
     }
-     .main_header__icon-for768, .main_header__divider-for768{
-        display:none;
+
+     .main_header{
+        &__icon-for768, &__divider-for768{
+          display:none;
+        }
+        &__logo{
+          margin-right: auto;
+        }
     }
-     .main_header__logo{
-        margin-right: auto;
-    }
+
     .main_container{
         border-top: 1px solid #B8FFEC;
+    
+        &__text-for768, &__photo-for768{
+          display:none;
+        }
+        &__photo-for320{
+          display:flex;
+          width: 100%;
+          height: auto;
+        }
     }
-    .main_container__text-for768, .main_container__photo-for768{
-        display:none;
-    }
-    .main_container__photo-for320{
-        display:flex;
-        width: 100%;
-        height: auto;
-    }
+
     .footer{
         display:block;
-    }
-    .footer_left,
-    .footer_center,
-    .footer_right {
-        width: 100%;     
-        text-align: center;    
-    } 
-    .footer_center{
-        margin:16px 0;
-    }
+       
+        &_left, &_center, &_right {
+          width: 100%;     
+          text-align: center;    
+        } 
+        &_center{
+          margin:16px 0;
+        }
+}
 }

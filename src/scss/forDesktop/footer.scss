@@ -1,22 +1,26 @@
-.footer{
-    display:flex;
-    margin:32px;
-    color:#7E7E82;
-    justify-content: space-between;
-    font-size: 14px;
-    margin-top: 80px;
+.footer {
+  display: flex;
+  margin: 32px;
+  margin-top: 80px;
+  color: #7E7E82;
+  justify-content: space-between;
+  font-size: 14px;
+
+  &_left,
+  &_center,
+  &_right {
+    width: 30%;
+
+    &_left {
+      text-align: left;
+    }
+
+    &_center {
+      text-align: center;
+    }
+
+    &_right {
+      text-align: right;
+    }
+  }
 }
-.footer_left{
-    text-align: left;
-}
-.footer_center{
-    text-align: center;
-}
-.footer_right{
-    text-align: right;
-}
-.footer_left,
-.footer_center,
-.footer_right {
-    width: 30%;         
-} 

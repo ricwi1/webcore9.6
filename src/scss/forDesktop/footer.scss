@@ -1,0 +1,22 @@
+.footer{
+    display:flex;
+    margin:32px;
+    color:#7E7E82;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 80px;
+}
+.footer_left{
+    text-align: left;
+}
+.footer_center{
+    text-align: center;
+}
+.footer_right{
+    text-align: right;
+}
+.footer_left,
+.footer_center,
+.footer_right {
+    width: 30%;         
+} 

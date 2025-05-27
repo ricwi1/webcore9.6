@@ -1,0 +1,82 @@
+.aside{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    min-width: 320px;
+    width:360px;
+    min-height: 1024px;
+}
+/* === асайд шапка === */
+
+.aside_header{
+    display: flex;
+    align-items: center;
+    padding:23px;
+}
+.aside_header__back{
+        display:none; 
+}
+.aside_header__icon, .aside_footer__icon, .aside_header__back{
+    width:40px;
+}
+.aside_header__logo{
+    width:97px;
+    margin-right: auto;
+}
+
+/* === айсад основа === */
+
+.aside_button{
+    display:flex;
+    flex-direction: column;
+    margin-top: 32px;
+    gap: 24px;
+}
+.aside_button__item{
+    display:flex;
+    background-color: white;
+    border:none;
+    font-weight: 500;
+    font-size: 20px;
+    margin:0 24px;
+    align-items: center;
+}
+.aside_button__item:first-child{
+    margin:0;
+    gap: 20px;
+    color:#7E7E82;
+}
+.aside_list__divider{
+    height: 32px;
+}
+
+/* === айсад подвал === */
+
+.aside_footer{
+    margin: 200px 0 24px 24px;
+}
+.aside_footer__icon_container{
+    display:flex;
+    gap:16px;
+}
+.aside_footer__email{
+    font-size: 16px;
+    margin-top: 16px;
+}
+.aside_footer__tel{
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.aside_footer__button_container{
+    display: flex;
+    flex-direction: row;
+    gap:16px;
+}
+.aside_footer__button{
+    border:none;
+    background-color: white;
+}
+.aside_footer__button:first-child,.aside_footer__button:hover{
+    color:#7E7E82;
+}

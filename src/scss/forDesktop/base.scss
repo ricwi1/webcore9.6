@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../../fonts/TTLakes-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../../fonts/TTLakes-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+} 
+
+/* === base style === */
+
+body{
+    background-color: #F8F8F8;
+    display: flex;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+button, .icon, .menu-item,.main_container__readmore, .main_header__icon, .main_header__menu, .main_header__repair, .main_header__checkstatus{
+  cursor: pointer;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+body,.aside_button__item,
+.button_expand,
+.button_container__text {
+  font-family: "TT Lakes", sans-serif;
+}

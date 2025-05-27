@@ -76,7 +76,7 @@ const deviceFor768 = document.querySelectorAll(".third_container__button-item-fo
 function setupEventListeners() {
     let screenWidth = window.innerWidth;
 
-    if (screenWidth > 360) {
+    if (screenWidth > 768) {
         if (button2) {
             button2.addEventListener("click", showBrends);
         }
@@ -86,7 +86,7 @@ function setupEventListeners() {
         }
     }
 
-    if (screenWidth <= 360) {
+    if (screenWidth < 768) {
         if (menuButton) {
             menuButton.addEventListener("click", showMenu);
         }

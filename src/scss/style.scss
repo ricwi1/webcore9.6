@@ -38,10 +38,8 @@ body,.aside_button__item,
     background-color: white;
     min-width: 320px;
     width:360px;
-    height:100hv;
     min-height: 1024px;
 }
-
 /* === асайд шапка === */
 
 .aside_header{
@@ -399,7 +397,7 @@ main{
     width: 30%;         
 } 
 
-@media (max-width:1439px){
+@media (max-width:1167px){
     .aside{
         display:none;
     }

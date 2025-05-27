@@ -96,6 +96,5 @@ function setupEventListeners() {
         }
     }
 }
-
 window.addEventListener('resize', setupEventListeners);
 window.addEventListener('DOMContentLoaded', setupEventListeners);

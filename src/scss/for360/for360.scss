@@ -1,12 +1,4 @@
 @media (max-width:767px){
-    .aside{
-        height: 100vh;
-        
-        &_header__back{
-          display:flex;
-          margin-right: 16px;
-        }
-    }
 
     .third_container, .second_container, .fourth_table{
         display:none;

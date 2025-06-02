@@ -1,14 +1,22 @@
 @media (max-width:1167px){
     .aside{
         display:none;
-        height: 100vh;
+        &.active{
+          display: flex;
+          position:fixed;
+          width: 100vw;
+          max-width:360px;
+          z-index: 200;
+          height: 100%;
+        }
 
         &_header__back{
           display:flex;
           margin-right: 16px;
         }
     }
-main.menu-overlay::after {
+.overlay.active {
+  display: flex;
   content: "";
   position: fixed;
   left: 0;
@@ -16,8 +24,11 @@ main.menu-overlay::after {
   bottom: 0;
   height: 100%;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
-  z-index: 9999;
+  z-index: 100;
   pointer-events: none;
+}
+main.active{
+  position:fixed;
 }
     .main_header__logo{
       height:51px;

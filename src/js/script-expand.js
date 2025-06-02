@@ -55,20 +55,23 @@ const deviceFor768 = document.querySelectorAll(".third_container__button-item-fo
     }
  }
 
-    const aside = document.querySelector("aside");
+    const aside = document.querySelector(".aside");
     const main = document.querySelector("main");
+    const overlay = document.querySelector(".overlay");
 
     const menuButton = document.querySelector(".main_header__menu");
     const backButton = document.querySelector(".aside_header__back");
 
     function showMenu() {
-      aside.style.display = "flex";
-      main.style.display = "none";
+      aside.classList.add("active");
+      main.classList.add("active");
+      overlay.classList.add("active");
     }
 
     function hideMenu() {
-      aside.style.display = "none";
-      main.style.display = "block";
+      aside.classList.remove("active");
+      main.classList.remove("active");
+      overlay.classList.remove("active");
     }
 
   
